@@ -25977,10 +25977,6 @@ width
 	color: #6c757d
 }
 
-.pagination {
-	display: flex;
-	padding-left: 0
-}
 
 .page-link, .popover-body, .popover-header {
 	padding: .5rem .75rem
