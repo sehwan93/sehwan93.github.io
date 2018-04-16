@@ -11646,15 +11646,6 @@ normal
 }
 .breadcrumb
 ,
-.pagination
-{
-border-radius
-:
-.25rem;
-list-style
-:
-none
-}
 .card-columns
  
 .card
@@ -11713,17 +11704,6 @@ content
 :
 "/"
 }
-.pagination
-,
-.progress
-{
-display
-:
--webkit-box;
-display
-:
--ms-flexbox
-}
 .breadcrumb-item
 +
 .breadcrumb-item
@@ -11741,15 +11721,6 @@ none
 color
 :
 #6c757d
-}
-.pagination
-{
-display
-:
-flex;
-padding-left
-:
-0
 }
 .page-link
 ,
@@ -25936,11 +25907,6 @@ width
 	-webkit-box-direction: normal
 }
 
-.breadcrumb, .pagination {
-	border-radius: .25rem;
-	list-style: none
-}
-
 .card-columns .card {
 	margin-bottom: .75rem
 }
@@ -25964,10 +25930,6 @@ width
 	content: "/"
 }
 
-.pagination, .progress {
-	display: -webkit-box;
-	display: -ms-flexbox
-}
 
 .breadcrumb-item+.breadcrumb-item:hover::before {
 	text-decoration: none
