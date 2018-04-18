@@ -47,6 +47,7 @@ markdown: kramdown
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate-v2
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
