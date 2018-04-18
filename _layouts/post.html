@@ -7,7 +7,11 @@ layout: default
   <article class="post">
     <header>
       <div class="post_image">
-        <img  onError="/assets/img/alaska.jpg" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}}>
+      	{% if page.img %}
+        	<img src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}}>
+        {% else %}
+        	<img src="/assets/img/alaska.jpg">
+       	{% endif %}
       </div>
       <div class="post_description">
         <p class="post_meta">{{page.date | date: '%Y, %b %d'}}</p>
