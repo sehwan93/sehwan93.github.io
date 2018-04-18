@@ -10,13 +10,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: # add banner title
+banner-title: SEHWAN# add banner title
 banner-desc: # add banner description
 
 # Author settings
-author-pic: face.jpg # your photo
-author-name: # your name
-about-author: # about author
+author-pic:  # your photo
+author-name: KIM-SEHWAN# your name
+about-author: Hello.# about author
 email: your-email@domain.com # your email
 phone: (496)-169-6557 # your pnone number
 website: https://dwayne.example.com # you website
