@@ -2,7 +2,7 @@
 layout: main
 ---
 
-{% for post in paginator.posts %}
+{% for post in site.categories %}
   <div class="chapter">
     <a href="{{post.url | prepend: site.baseurl}}">
       {% if post.img %}
@@ -10,7 +10,7 @@ layout: main
       {% endif %}
     </a>
     <div class="chapter_inner">
-      <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}</p>
+      <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}asdf</p>
       <h3 class="chapter_title">{{post.title}}</h3>
     </div>
   </div>
