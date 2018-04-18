@@ -14,9 +14,9 @@ banner-title: SEHWAN# add banner title
 banner-desc: # add banner description
 
 # Author settings
-author-pic:  # your photo
-author-name: KIM-SEHWAN# your name
-about-author: Hello.# about author
+author-pic:  face.jpg# your photo
+author-name: KIM-SEHWAN
+about-author: Hello.
 email: your-email@domain.com # your email
 phone: (496)-169-6557 # your pnone number
 website: https://dwayne.example.com # you website
