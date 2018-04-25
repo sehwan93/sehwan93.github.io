@@ -86,7 +86,7 @@ li문을 추가해가며.. html 코드와 this.rno와 같이 자신이 가지고
 ### handlebars의 로직 (반복문,제어문 등)
 
 코드를 먼저 보도록 하자.
-
+```javascript
 	<script id="template" type="text/x-handlebars-template">
 		{{#each .}}
 		<h1>{{name}}</h1>
@@ -111,7 +111,13 @@ li문을 추가해가며.. html 코드와 this.rno와 같이 자신이 가지고
         //템플릿과 데이터를 바인딩 후 html로 뿌려준다.
 		$("#test").html(template(data));
 	</script>
-
+```
 반복문의 시작은 {{#each .}}으로 끝은 {{/each}}로 하였다.
 
 위와 같은 방법으로 JSON으로 받아온 데이터를 쉽게 HTML코드로 변환 할 수 있게 해주는 것이 Handlebars 이다.
+
+```java
+	public static void main(String[] args){
+		System.out.println("hi");
+	}
+```
