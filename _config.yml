@@ -50,6 +50,8 @@ plugins:
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
+# code highlighter
+highlighter: rouge
 
 encoding: UTF-8
 
