@@ -50,12 +50,12 @@ li문을 추가해가며.. html 코드와 this.rno와 같이 자신이 가지고
   
 우선 사용하기 위해서는 jquery와 handlebars를 받아와야한다.
 
-	
+```javascript
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
-
+```
 최소한의 사용법은 아래와 같은 코드를 body 안에 넣어주면 된다.
-
+```javascript
 	<script id="template" type="text/x-handlebars-template">
 		<h1>{{name}}</h1>
 		<h2>{{userid}}</h2>
@@ -66,13 +66,13 @@ li문을 추가해가며.. html 코드와 this.rno와 같이 자신이 가지고
 		var data = {name:"김세환",userid:"sehwan"};
 		$("#test").html(template(data));
 	</script>
-
+```
 
 만약 같은 코드를 template을 쓰지 않았다면
-
+```javascript
 	var ss = "<h1>"+data.name+"</h1><h2>"+data.userid...
     $("#test").html(ss);
-
+```
 이런 식으로 작성을 했어야 할 것이다. (매우 간단한 예제라서 오히려 더 복잡해보이기도 한다..)
 
 ==template를 사용 할 경우 html코드를 따로 작성하고 data를 집어 넣는 방법인 반면==
