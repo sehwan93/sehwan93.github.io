@@ -11,7 +11,7 @@ handlebars는 javascript 템플릿 중 하나입니다.
 
 우리가 보통 ajax를 사용하여 서버에서 데이터를 받아오면 HTML로 뿌려주기 위해선 다음과 같은 
 코드를 작성합니다.
-
+```java
 	function getAllList(){
 		$.getJSON("/replies/all/" + bno, function(data) {
 			console.log(data.length);
@@ -26,7 +26,7 @@ handlebars는 javascript 템플릿 중 하나입니다.
 			$("#replies").html(str);
 		});
 	}
-
+```
 혹시 모르는 사람들이 있을까봐 간략한 설명을 하자면
 
 /replies/all/ 이란 url에 요청을 하면 서버는 요청을 처리한 후 JSON 형식의 데이터를 반환한다.

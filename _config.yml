@@ -52,6 +52,6 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 # code highlighter
 highlighter: rouge
-#adsfasdf
+
 encoding: UTF-8
 
