@@ -1,21 +1,20 @@
 title: Sehwan
+description: > # this means to ignore newlines until "baseurl:"
+  hello world
 permalink: ':title/'
-baseurl: "/" 
-url: ""
-
-#encoding
-encoding: UTF-8
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
 
 # Author settings
-author-pic:  face.jpg# your photo
+author-pic:  face.jpg # your photo
 author-name: KIM-SEHWAN
 about-author: Hello.
-email: your-email@domain.com # your email
-phone: (496)-169-6557 # your pnone number
-website: https://dwayne.example.com # you website
+email: 2517762@naver.com # your email
+phone: xxx-xxxx-xxxx # your pnone number
+website: https://sehwan93.github.io/ # you website
 
 # Social link
 google_url:    # add url link
@@ -26,7 +25,7 @@ dribbble_url:  # add url link
 facebook_url:  # add url link
 
 # Disqus
-discus_identifier: sehwan93
+discus_identifier: kmk4204
 
 # Newsletter
 mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
@@ -49,4 +48,6 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 # code highlighter
 highlighter: rouge
+
+encoding: UTF-8
 
