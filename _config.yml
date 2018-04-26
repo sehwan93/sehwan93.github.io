@@ -46,6 +46,9 @@ plugins:
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 encoding: UTF-8
+encoding: UTF-8
+encoding: UTF-8
+encoding: UTF-8
 # code highlighter
 highlighter: rouge
 
