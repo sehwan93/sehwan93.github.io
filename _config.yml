@@ -9,11 +9,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 video: mountains.mp4 # add banner video. Add your video file to the folder video
 
 # Author settings
-author-pic:  face.jpg # your photo
+author-pic: face.jpg # your photo
 author-name: KIM-SEHWAN
 about-author: Hello.
 email: 2517762@naver.com # your email
-phone: xxx-xxxx-xxxx # your pnone number
+phone: 010-2992-7762 # your pnone number
 website: https://sehwan93.github.io/ # you website
 
 # Social link
