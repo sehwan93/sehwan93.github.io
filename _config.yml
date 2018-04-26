@@ -3,6 +3,9 @@ permalink: ':title/'
 baseurl: "/" 
 url: ""
 
+#encoding
+encoding: UTF-8
+
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
 
@@ -47,6 +50,5 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 # code highlighter
 highlighter: rouge
 
-#encoding
-encoding: UTF-8
+=
 
