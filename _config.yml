@@ -2,8 +2,8 @@ title: Sehwan
 description: 세환이 블로그입니다. # this means to ignore newlines until "baseurl:"
 
 permalink: ':title/'
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" 
+url: ""
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
