@@ -1,4 +1,7 @@
 title: Sehwan
+#encoding
+encoding: UTF-8
+
 description: > # this means to ignore newlines until "baseurl:"
   hello world
 permalink: ':title/'
@@ -49,7 +52,6 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 # code highlighter
 highlighter: rouge
 
-#encoding
-encoding: UTF-8
+
 
 
