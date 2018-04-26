@@ -1,6 +1,6 @@
 title: Sehwan
 #encoding
-encoding: UTF-8
+encoding: "UTF-8"
 
 description: > # this means to ignore newlines until "baseurl:"
   hello world
