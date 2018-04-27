@@ -43,6 +43,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
 
+gems:
+  - jekyll-feed
+
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 

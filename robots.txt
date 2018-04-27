@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://sehwan93.github.io/sitemap.xml
