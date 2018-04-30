@@ -241,7 +241,8 @@ public class MessageServiceImpl implements MessageService{
 	우리의 목적은 메세지를 만들고 읽을 때 마다 로그를 기록하고 실행에 걸린 시간을 로그에 기록하는 것! 
 	aop기능을 위해서 aop패키즈를 작성하고 root-context.xml에 해당 패키지 인식하도록 설정.
     
-    또한 root-context.xml에서 aop기능을 설정할 수 있도록 <aop:config>를 추가
+또한 root-context.xml에서 aop기능을 설정할 수 있도록 <aop:config>를 추가
+
 ```xml
 <context:component-scan base-package="org.sehwan.aop"></context:component-scan>
 <aop:config></aop:config>
@@ -250,7 +251,7 @@ public class MessageServiceImpl implements MessageService{
 * SampleAdvice 작성
 
 ```java
-	//스프링에서 bean으로 인식하기 위함
+//스프링에서 bean으로 인식하기 위함
 @Component
 @Aspect
 public class SampleAdvice {
