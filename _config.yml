@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   hello world
 permalink: ':title/'
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://sehwan93.github.io
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
@@ -31,7 +31,7 @@ discus_identifier: sehwan93
 mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
 # Tracker
-analytics: # analytics 
+analytics: UA-118318535-1 # analytics 
 
 # Paginate
 paginate: 12
@@ -43,12 +43,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
 
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
 encoding: UTF-8
-encoding: UTF-8
-encoding: UTF-8
-encoding: UTF-8
+
 # code highlighter
 highlighter: rouge
 
