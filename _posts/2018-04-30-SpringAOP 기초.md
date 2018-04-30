@@ -269,7 +269,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 
 * Controller작성
 
-```JAVA
+```java
     import org.aspectj.lang.annotation.Aspect;
     import org.aspectj.lang.annotation.Before;
     import org.slf4j.Logger;
