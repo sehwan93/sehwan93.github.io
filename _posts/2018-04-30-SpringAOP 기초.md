@@ -28,72 +28,72 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 * pom.xml에 Properties 변경 및 Dependencies 추가
 
 ```xml
-	<!-- properties 태그 -->
-	<properties>
-		<java-version>1.8</java-version>
-		<org.springframework-version>4.3.8.RELEASE</org.springframework-version>
-		<org.aspectj-version>1.8.9</org.aspectj-version>
-		<org.slf4j-version>1.6.6</org.slf4j-version>
-	</properties>
-    
-    <!--dependencies 태그 -->
-    <!-- AspectJ -->
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjrt</artifactId>
-			<version>${org.aspectj-version}</version>
-		</dependency>	
-		
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjtools</artifactId>
-			<version>${org.aspectj-version}</version>
-		</dependency>	
-		
-		<!-- AOP -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>		
-		
-		<!-- tx -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
+<!-- properties 태그 -->
+<properties>
+	<java-version>1.8</java-version>
+	<org.springframework-version>4.3.8.RELEASE</org.springframework-version>
+	<org.aspectj-version>1.8.9</org.aspectj-version>
+	<org.slf4j-version>1.6.6</org.slf4j-version>
+</properties>
+
+<!--dependencies 태그 -->
+<!-- AspectJ -->
+	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjrt</artifactId>
+		<version>${org.aspectj-version}</version>
+	</dependency>	
+	
+	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjtools</artifactId>
+		<version>${org.aspectj-version}</version>
+	</dependency>	
+	
+	<!-- AOP -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aop</artifactId>
+		<version>${org.springframework-version}</version>
+	</dependency>		
+	
+	<!-- tx -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-tx</artifactId>
+		<version>${org.springframework-version}</version>
+	</dependency>
 ```
 * root-context.xml에 aop와 tx 네임스페이스 추가
 * 샘플용 테이블 제작 및 샘플 데이터 주입, Message 시퀸스 생성
 
 ```sql
-	--message 테이블 시퀸스
-	create sequence msg_seq 
-    start with 1
-    increment by 1;
+--message 테이블 시퀸스
+create sequence msg_seq 
+start with 1
+increment by 1;
 
-    create table tbl_message (
-        mno int,
-        targetid varchar(50),
-        sender varchar(50),
-        message varchar(250),
-        opendate timestamp,
-        senddate timestamp default sysdate
-    );
+create table tbl_message (
+    mno int,
+    targetid varchar(50),
+    sender varchar(50),
+    message varchar(250),
+    opendate timestamp,
+    senddate timestamp default sysdate
+);
 
-    create table tbl_user (
-        userid varchar(50),
-        userpw varchar(50),
-        username varchar(50),
-        userpoint int default 0
-    );
+create table tbl_user (
+    userid varchar(50),
+    userpw varchar(50),
+    username varchar(50),
+    userpoint int default 0
+);
 
-    INSERT INTO tbl_user(userid,userpw,username) values ('user0','user0','홍길동');
-    INSERT INTO tbl_user(userid,userpw,username) values ('user1','user1','김세환');
-    INSERT INTO tbl_user(userid,userpw,username) values ('user2','user2','김연아');
-    INSERT INTO tbl_user(userid,userpw,username) values ('user3','user3','박지성');
-    INSERT INTO tbl_user(userid,userpw,username) values ('user4','user4','유병재');
+INSERT INTO tbl_user(userid,userpw,username) values ('user0','user0','홍길동');
+INSERT INTO tbl_user(userid,userpw,username) values ('user1','user1','김세환');
+INSERT INTO tbl_user(userid,userpw,username) values ('user2','user2','김연아');
+INSERT INTO tbl_user(userid,userpw,username) values ('user3','user3','박지성');
+INSERT INTO tbl_user(userid,userpw,username) values ('user4','user4','유병재');
 ```
 
 * VO,dao,Mapper, 서비스 작성
@@ -101,51 +101,51 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     *	MessageDAO 생성
  
 ```java
-    public interface MessageDAO {
-    	//등록
-        public void create(MessageVO vo) throws Exception;
-        //읽기
-        public MessageVO readMessage(Integer mid) throws Exception;
-        //수정
-        public void updateState(Integer mid) throws Exception;
-    }
+public interface MessageDAO {
+	 //등록
+    public void create(MessageVO vo) throws Exception;
+    //읽기
+    public MessageVO readMessage(Integer mid) throws Exception;
+    //수정
+    public void updateState(Integer mid) throws Exception;
+}
 ```
 
 * MessageDAO용 Mapper 제작!
 
 ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE mapper
-    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-    <mapper namespace="org.sehwan.mapper.MessageMapper">
-      
-        <insert id="create">
-            insert into tbl_message (targetid,sender,message) values
-            (#{targetid},#{sender},#{message})
-        </insert>   	
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sehwan.mapper.MessageMapper">
+  
+    <insert id="create">
+        insert into tbl_message (targetid,sender,message) values
+        (#{targetid},#{sender},#{message})
+    </insert>   	
 
-        <select id="readMessage" resultType="MessageVO">
-            SELECT * FROM tbl_message WHERE mno=#{mno}
-        </select>
+    <select id="readMessage" resultType="MessageVO">
+        SELECT * FROM tbl_message WHERE mno=#{mno}
+    </select>
 
-        <update id="updateState">
-            UPDATE tbl_message SET opendate = sysdate WHERE mno=#{mno}
-        </update>	
-    </mapper>
+    <update id="updateState">
+        UPDATE tbl_message SET opendate = sysdate WHERE mno=#{mno}
+    </update>	
+</mapper>
 ```
 
 * MessageDAOImpl 제작
 
 ```java
-    package org.sehwan.dao;
-    import org.apache.ibatis.session.SqlSession;
-    import org.sehwan.vo.MessageVO;
-    import org.springframework.beans.factory.annotation.Autowired;
-    import org.springframework.stereotype.Repository;
+package org.sehwan.dao;
+import org.apache.ibatis.session.SqlSession;
+import org.sehwan.vo.MessageVO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
-    @Repository
-    public class MessageDAOImpl implements MessageDAO {
+@Repository
+public class MessageDAOImpl implements MessageDAO {
 
     @Autowired
     private SqlSession session;
@@ -176,38 +176,38 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 	MessageDAO 및 mapper에서 할 수도 있지만 구분하는 것이 로직을 파악하는데 더 용이 할 수 있으므로 분리하였습니다.
 
 ```java
-	public interface PointDAO {
+public interface PointDAO {
 	public void updatePoint(String userid,int point) throws Exception;
-	}
+}
 ```
 
 ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-       <mapper namespace="org.sehwan.mapper.pointMapper">
+   <mapper namespace="org.sehwan.mapper.pointMapper">
 
-        <update id="updatePoint">
-            update tbl_user set userpoint=userpoint+#{point} where userid=#{userid}
-        </update>
-    </mapper>
+    <update id="updatePoint">
+        update tbl_user set userpoint=userpoint+#{point} where userid=#{userid}
+    </update>
+</mapper>
 ```
 
 * MessageService,Impl 구현
 
 ```java
-	public interface MessageService {
-        public void addMessage(MessageVO vo) throws Exception;
-        public MessageVO readMessage(String userid,Integer mno) throws Exception;
-	}
+public interface MessageService {
+    public void addMessage(MessageVO vo) throws Exception;
+    public MessageVO readMessage(String userid,Integer mno) throws Exception;
+}
 ```
 
 ```java
-	@Service
-	public class MessageServiceImpl implements MessageService{
-	
+@Service
+public class MessageServiceImpl implements MessageService{
+
 	@Autowired
 	private MessageDAO messageDAO;
 	
@@ -233,7 +233,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     	return messageDAO.readMessage(mno);
 	}
 
-	}
+}
 ```
 
 ### 본격적인 AOP제작
@@ -243,26 +243,26 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     
     또한 root-context.xml에서 aop기능을 설정할 수 있도록 <aop:config>를 추가
 ```xml
-	<context:component-scan base-package="org.sehwan.aop"></context:component-scan>
-    <aop:config></aop:config>
+<context:component-scan base-package="org.sehwan.aop"></context:component-scan>
+<aop:config></aop:config>
 ```
 
 * SampleAdvice 작성
 
 ```java
 	//스프링에서 bean으로 인식하기 위함
-    @Component
-    @Aspect
-    public class SampleAdvice {
-        private static final Logger logger = LoggerFactory.getLogger(SampleAdvice.class);
+@Component
+@Aspect
+public class SampleAdvice {
+    private static final Logger logger = LoggerFactory.getLogger(SampleAdvice.class);
 
-        //pointcuts을 지정하는 문법, AspectJ의 언어. org.sehwan.service.MessageService로 시작하는 모든 클래스의 모든 메소드를 지정.
-        @Before("execution(* org.sehwan.service.MessageService*.*(..))")
-        public void startLog() {
-            logger.info("----------------");
-            logger.info("----------------");
-        }
-        //제대로 지정된 후에는 STS에서 코드의 라인을 알려주는 곳 앞에 화살표가 표시!
+    //pointcuts을 지정하는 문법, AspectJ의 언어. org.sehwan.service.MessageService로 시작하는 모든 클래스의 모든 메소드를 지정.
+    @Before("execution(* org.sehwan.service.MessageService*.*(..))")
+    public void startLog() {
+        logger.info("----------------");
+        logger.info("----------------");
+    }
+    //제대로 지정된 후에는 STS에서 코드의 라인을 알려주는 곳 앞에 화살표가 표시!
 }
 
 ```
@@ -270,26 +270,26 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 * Controller작성
 
 ```java
-    import org.aspectj.lang.annotation.Aspect;
-    import org.aspectj.lang.annotation.Before;
-    import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    import org.springframework.stereotype.Component;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
-    //스프링에서 bean으로 인식하기 위함
-    @Component
-    @Aspect
-    public class SampleAdvice {
-        private static final Logger logger = LoggerFactory.getLogger(SampleAdvice.class);
+//스프링에서 bean으로 인식하기 위함
+@Component
+@Aspect
+public class SampleAdvice {
+    private static final Logger logger = LoggerFactory.getLogger(SampleAdvice.class);
 
-        //pointcuts을 지정하는 문법, AspectJ의 언어. org.sehwan.service.MessageService로 시작하는 모든 클래스의 모든 메소드를 지정.
-        @Before("execution(* org.sehwan.service.MessageService*.*(..))")
-        public void startLog() {
-            logger.info("----------------");
-            logger.info("----------------");
-        }
-        //제대로 지정된 후에는 STS에서 코드의 라인을 알려주는 곳 앞에 화살표가 표시됨!
+    //pointcuts을 지정하는 문법, AspectJ의 언어. org.sehwan.service.MessageService로 시작하는 모든 클래스의 모든 메소드를 지정.
+    @Before("execution(* org.sehwan.service.MessageService*.*(..))")
+    public void startLog() {
+        logger.info("----------------");
+        logger.info("----------------");
     }
+    //제대로 지정된 후에는 STS에서 코드의 라인을 알려주는 곳 앞에 화살표가 표시됨!
+}
 ```
 
 * 위의 메소드를 호출하면 log에 
