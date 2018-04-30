@@ -25,7 +25,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 
 ### 사용 방법
 
-1. pom.xml에 Properties 변경 및 Dependencies 추가
+* pom.xml에 Properties 변경 및 Dependencies 추가
 
 ```xml
 	<!-- properties 태그 -->
@@ -64,8 +64,8 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 			<version>${org.springframework-version}</version>
 		</dependency>
 ```
-2. root-context.xml에 aop와 tx 네임스페이스 추가
-3. 샘플용 테이블 제작 및 샘플 데이터 주입, Message 시퀸스 생성
+* root-context.xml에 aop와 tx 네임스페이스 추가
+* 샘플용 테이블 제작 및 샘플 데이터 주입, Message 시퀸스 생성
 
 ```sql
 	--message 테이블 시퀸스
@@ -96,7 +96,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     INSERT INTO tbl_user(userid,userpw,username) values ('user4','user4','유병재');
 ```
 
-4. VO,dao,Mapper, 서비스 작성
+* VO,dao,Mapper, 서비스 작성
 	*	MessageVO 및 UserVO 생성
     *	MessageDAO 생성
  
@@ -111,7 +111,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     }
 ```
 
-5. MessageDAO용 Mapper 제작!
+* MessageDAO용 Mapper 제작!
 
 ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -135,7 +135,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     </mapper>
 ```
 
-6. MessageDAOImpl 제작
+* MessageDAOImpl 제작
 
 ```java
     package org.sehwan.dao;
@@ -172,7 +172,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 }
 ```
 
-7. 포인트 처리를 위한 PointDAO,Impl 및 Mapper구현
+* 포인트 처리를 위한 PointDAO,Impl 및 Mapper구현
 	MessageDAO 및 mapper에서 할 수도 있지만 구분하는 것이 로직을 파악하는데 더 용이 할 수 있으므로 분리하였습니다.
 
 ```java
@@ -195,7 +195,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     </mapper>
 ```
 
-8. MessageService,Impl 구현
+* MessageService,Impl 구현
 
 ```java
 	public interface MessageService {
@@ -237,7 +237,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ```
 
 ### 본격적인 AOP제작
-1. Advice 생성
+* Advice 생성
 	우리의 목적은 메세지를 만들고 읽을 때 마다 로그를 기록하고 실행에 걸린 시간을 로그에 기록하는 것! 
 	aop기능을 위해서 aop패키즈를 작성하고 root-context.xml에 해당 패키지 인식하도록 설정.
     
@@ -247,7 +247,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     <aop:config></aop:config>
 ```
 
-2. SampleAdvice 작성
+* SampleAdvice 작성
 
 ```java
 	//스프링에서 bean으로 인식하기 위함
@@ -267,7 +267,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 
 ```
 
-3. Controller작성
+* Controller작성
 
 ```JAVA
     import org.aspectj.lang.annotation.Aspect;
@@ -292,7 +292,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
     }
 ```
 
-4. 위의 메소드를 호출하면 log에 
+* 위의 메소드를 호출하면 log에 
 INFO : org.sehwan.aop.SampleAdvice - ----------------
 INFO : org.sehwan.aop.SampleAdvice - ----------------
 위와 같은 로그가 기록됨!
