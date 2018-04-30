@@ -293,6 +293,8 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ```
 
 * 위의 메소드를 호출하면 log에 
+
 INFO : org.sehwan.aop.SampleAdvice - ----------------
+
 INFO : org.sehwan.aop.SampleAdvice - ----------------
 위와 같은 로그가 기록됨!
