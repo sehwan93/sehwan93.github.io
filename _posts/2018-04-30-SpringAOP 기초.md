@@ -26,6 +26,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ### 사용 방법
 
 1. pom.xml에 Properties 변경 및 Dependencies 추가
+
 ```xml
 	<!-- properties 태그 -->
 	<properties>
@@ -65,6 +66,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ```
 2. root-context.xml에 aop와 tx 네임스페이스 추가
 3. 샘플용 테이블 제작 및 샘플 데이터 주입, Message 시퀸스 생성
+
 ```sql
 	--message 테이블 시퀸스
 	create sequence msg_seq 
@@ -97,6 +99,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 4. VO,dao,Mapper, 서비스 작성
 	*	MessageVO 및 UserVO 생성
     *	MessageDAO 생성
+ 
 ```java
     public interface MessageDAO {
     	//등록
@@ -109,6 +112,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ```
 
 5. MessageDAO용 Mapper 제작!
+
 ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE mapper
@@ -132,6 +136,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ```
 
 6. MessageDAOImpl 제작
+
 ```java
     package org.sehwan.dao;
     import org.apache.ibatis.session.SqlSession;
@@ -191,6 +196,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ```
 
 8. MessageService,Impl 구현
+
 ```java
 	public interface MessageService {
         public void addMessage(MessageVO vo) throws Exception;
@@ -262,6 +268,7 @@ Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) �
 ```
 
 3. Controller작성
+
 ```JAVA
     import org.aspectj.lang.annotation.Aspect;
     import org.aspectj.lang.annotation.Before;
