@@ -5,13 +5,10 @@ permalink: ':title/'
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://sehwan93.github.io
 
-# Banner settings
-video: mountains.mp4 # add banner video. Add your video file to the folder video
-
 # Author settings
 author-pic: face.jpg # your photo
 author-name: KIM-SEHWAN
-about-author: �輼ȯ.
+about-author: hello.
 email: 2517762@naver.com # your email
 phone: 010-2992-7762 # your pnone number
 website: https://sehwan93.github.io/ # you website
