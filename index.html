@@ -5,6 +5,7 @@ layout: main
 {% for post in paginator.posts %}
   <div class="chapter">
     <a href="{{post.url | prepend: site.baseurl}}">
+    <script>alert("hi");</script>
       {% if post.img %}
       <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
       {% else %}
