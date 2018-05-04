@@ -9,10 +9,10 @@ layout: main
       {% if post.img %}
       <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
       {% else %}
-      <img id="{{post.title}}_img">
+      <img id="{{post.title}}_img" src="asdf">
             <script>
       	var ran = Math.floor(Math.random()*10);
-      	var im = $("#{{post.title}}_img");
+      	var im = $("#{{post.title}}_img").attr("src");
       	alert(im);
       	if(ran%3==0){
       		alert("0");
