@@ -9,6 +9,9 @@ layout: main
       {% if post.img %}
       <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
       {% else %}
+      <script>
+      	alert(image_randon());
+      </script>
       <img id="{{post.title}}_img" src="/assets/img/alaska.jpg">
       {% endif %}
     </a>
