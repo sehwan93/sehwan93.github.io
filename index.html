@@ -9,10 +9,19 @@ layout: main
       {% if post.img %}
       <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
       {% else %}
-      <script>
-      	alert(Math.floor(Math.random()*10));
+      <img id="{{post.title}}_img">
+            <script>
+      	var ran = Math.floor(Math.random()*10);
+      	var im = $("#{{post.title}}_img");
+      	alert(im);
+      	if(ran%3==0){
+      		alert("0");
+      	} else if(ran%3==1){
+      		alert("1");
+      	} else {
+      		alert("3");
+      	}
       </script>
-      <img id="{{post.title}}_img" src="/assets/img/alaska.jpg">
       {% endif %}
     </a>
     <div class="chapter_inner">
