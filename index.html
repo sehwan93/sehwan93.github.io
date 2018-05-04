@@ -12,14 +12,13 @@ layout: main
       <img id="{{post.title}}_img" src="asdf">
             <script>
       	var ran = Math.floor(Math.random()*10);
-      	var im = $("#{{post.title}}_img").attr("src");
-      	alert(im);
+      	var image_src = document.getelementbyid("{{post.title}}_img").src();
       	if(ran%3==0){
-      		alert("0");
+      		image_src = "/assets/img/alaska.jpg";
       	} else if(ran%3==1){
-      		alert("1");
+      		image_src = "/assets/img/bora-bora.jpg";
       	} else {
-      		alert("3");
+      		image_src = "/assets/img/nevada.jpg";
       	}
       </script>
       {% endif %}
