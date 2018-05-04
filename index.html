@@ -9,16 +9,16 @@ layout: main
       {% if post.img %}
       <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
       {% else %}
-      <img id="{{post.title}}_img" src="asdf">
+      <img id="{{post.title}}_img">
             <script>
       	var ran = Math.floor(Math.random()*10);
-      	var image_src = document.getElementByid("{{post.title}}_img").src();
+      	
       	if(ran%3==0){
-      		image_src = "/assets/img/alaska.jpg";
+      		var image_src = document.getElementById("{{post.title}}_img").src("/assets/img/alaska.jpg");
       	} else if(ran%3==1){
-      		image_src = "/assets/img/bora-bora.jpg";
+      		var image_src = document.getElementById("{{post.title}}_img").src("/assets/img/nevada.jpg");
       	} else {
-      		image_src = "/assets/img/nevada.jpg";
+      		var image_src = document.getElementById("{{post.title}}_img").src("/assets/img/bora-bora.jpg");
       	}
       </script>
       {% endif %}
