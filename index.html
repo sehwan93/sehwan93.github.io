@@ -14,11 +14,11 @@ layout: main
       	var ran = Math.floor(Math.random()*10);
       	
       	if(ran%3==0){
-      		var image_src = document.getElementById("{{post.title}}_img").src="/assets/img/alaska.jpg";
+      		 document.getElementById("{{post.title}}_img").src="/assets/img/alaska.jpg";
       	} else if(ran%3==1){
-      		var image_src = document.getElementById("{{post.title}}_img").src="/assets/img/nevada.jpg";
+      		 document.getElementById("{{post.title}}_img").src="/assets/img/nevada.jpg";
       	} else {
-      		var image_src = document.getElementById("{{post.title}}_img").src="/assets/img/bora-bora.jpg"
+      		 document.getElementById("{{post.title}}_img").src="/assets/img/bora-bora.jpg";
       	}
       </script>
       {% endif %}
