@@ -54,6 +54,7 @@ layout: default
 
     <div class="entry_content">
       {{page.content | markdownify}}
+      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
     </div>
     
     <div class="post_wrapper">
@@ -117,7 +118,7 @@ layout: default
         {% endfor %}
       </div>
     </div>
-    <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+
 
     <script>
 	    $("#menu-toggle").click(function(e) {
