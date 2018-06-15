@@ -117,9 +117,13 @@ layout: default
         {% endfor %}
       </div>
     </div>
-    
+    <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+
     <script>
-    	
+	    $("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#wrapper").toggleClass("toggled");
+	    });
     </script>
   </section> <!-- End Section Recent Box -->
   
