@@ -126,6 +126,9 @@ body {
 	line-height: 1.5;
 	color: #212529;
 }
+li {
+	font-size: 1.2rem;
+}
 
 [
 tabindex
