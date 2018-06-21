@@ -8,9 +8,9 @@ layout: main
     
       {% if post.img %}
       <div>
-      	<img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}" width="400" height="750" style="opacity: 0.5">
+      	<img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}" style="opacity: 0.5">
       {% else %}
-      <img id="{{post.title}}_img" width="400" height="750" style="opacity: 0.5">
+      <img id="{{post.title}}_img" style="opacity: 0.5">
 	        <script>
 	      	var ran = Math.floor(Math.random()*10);
 	      	
