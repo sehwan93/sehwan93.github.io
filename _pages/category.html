@@ -7,8 +7,17 @@ permalink: /category/
 <section id="tags">
   <h1> Category in Blog</h1>
 	    {% for category in site.categories %}
-        	<span>{{category|first}}</span>
-        	<span>{{category|last|size}}</span>
+	    	<h2 id="{{categori|first}}">{{category|first}}</h2>
+ 			 {% for posts in category %}
+	 			 {% for post in posts %}
+		 			 {% if post.url %}
+		 			 <div class="tag_list">
+				        <span><a href="{{ post.url }}">{{ post.title }}</a></span>
+				        <small><span>{{ post.date | date_to_string }}</span></small>
+				    </div>
+				    {% endif %}
+			    {% endfor %}
+		    {% endfor %}
         {% endfor %}      
         
     <div class="back_to_home">
