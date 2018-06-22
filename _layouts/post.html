@@ -80,12 +80,20 @@ layout: default
       <h2 class="category_title">카테고리</h2>
       <div class="category_list">
          <ul class="tags cf">
-			<!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
-			  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-			    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-			    <li ><a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
-			  {% endunless %}{% endfor %}
-			  </ul>
+			{% for category in site.categories %}
+		    	<h2 id="{{categori|first}}">{{category|first}}</h2>
+	 			 {% for posts in category %}
+		 			 {% for post in posts %}
+			 			 {% if post.url %}
+			 			 <div class="tag_list">
+					        <span><a href="{{ post.url }}">{{ post.title }}</a></span>
+					        <small><span>{{ post.date | date_to_string }}</span></small>
+					        <h1>{{page.category}}</h1>
+					    </div>
+					    {% endif %}
+				    {% endfor %}
+			    {% endfor %}
+	        {% endfor %}      
       </div>
     </div>
     
