@@ -79,21 +79,17 @@ layout: default
     <div class="post_wrapper">
       <h2 class="category_title">카테고리</h2>
       <div class="category_list">
-         <ul class="tags cf">
-			{% for category in site.categories %}
-				{% if category.first ==page.category %}
-		    		<h2 id="{{categori|first}}">{{category|first}}</h2>
-			 			 {% for posts in category %}
-				 			 {% for post in posts %}
-					 			 <div class="tag_list">
-							        <span><a href="{{ post.url }}">{{ post.title }}</a></span>
-							        <small><span>{{ post.date | date_to_string }}</span></small>
-							    </div>
-						    {% endfor %}
-					    {% endfor %}
-			    {% endif %}
-	        {% endfor %}      
-      </div>
+      		<h3>{{page.category}}</h3>
+	 			 {% for posts in page.category %}
+		 			 {% for post in posts %}
+			 			 {% if post.url %}
+			 			 <div class="tag_list">
+					        <span><a href="{{ post.url }}">{{ post.title }}</a></span>
+					        <small><span>{{ post.date | date_to_string }}</span></small>
+					    </div>
+					    {% endif %}
+				    {% endfor %}
+			    {% endfor %}
     </div>
     
     <script>
