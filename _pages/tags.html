@@ -31,6 +31,12 @@ permalink: /tags/
   	<hr>
   	<div>
   		<h1>hi</h1>
+  		 {% for category in site.categories %}
+	                          <span class="name">
+	                              {{ category | first }}
+	                          </span>
+	      <span class="badge">{{ category | last | size }}</span>
+	    {% endfor %}
   	</div>
     <div class="back_to_home">
         <a href="{{site.baseurl}}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</a>        
