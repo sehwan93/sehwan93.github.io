@@ -6,6 +6,7 @@ date: 2018-04-24 14:49:00 +0300
 description: Handelbars
 tag: [Handelbars]
 comments: true
+category: Handlebars
 ---
 # Handlebars
 

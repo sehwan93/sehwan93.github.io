@@ -5,6 +5,7 @@ img:
 date: 2018-05-04 15:00:00 +0300
 description: Spring Oracle Mybatis 연동 설정
 tag: [Spring Oracle Mybatis]
+category: Spring
 ---
 
 #Spring + Oracle + mybatis 연동

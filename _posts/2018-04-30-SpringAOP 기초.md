@@ -5,6 +5,7 @@ img:
 date: 2018-04-30 14:00:00 +0300
 description: 스프링 AOP를 오라클 DB와 연동하여 사용하는 예제입니다.
 tag: [Spring AOP]
+category: Spring
 ---
 # Spring AOP란?
 

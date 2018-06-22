@@ -20,6 +20,7 @@ instagram_url: # add url link
 pinterest_url: # add url link
 dribbble_url:  # add url link
 facebook_url:  # add url link
+category_dir: category/
 
 # Disqus
 discus_identifier: sehwan93
