@@ -77,24 +77,13 @@ layout: default
 
 	  <section class="recent_box tags">
     <div class="post_wrapper">
-      <h2 class="category_title">카테고hh리</h2>
+      <h2 class="category_title">카테고리</h2>
       <div class="category_list">
-      		<h3>{{page.category}}</h3>
-	 			 {% for posts in site.categories[page.category] %}
-		 			 {% for post in posts %}
-			 			 {% if post.url %}
-			 			 <div class="tag_list">
-					        <span><a href="{{ post.url }}">{{ post.title }}</a></span>
-					        <small><span>{{ post.date | date_to_string }}</span></small>
-					    </div>
-					    {% endif %}
-				    {% endfor %}
-			    {% endfor %}
+      	{% assign dog = page.category %}
+      		<h3>{{dog}}</h3>
+      		<h3>멍멍개개개</h3>
+    	</div>
     </div>
-    
-    <script>
-    	
-    </script>
   </section> <!-- End Section Recent Box -->
   <section class="recent_box">
     <div class="post_wrapper">
