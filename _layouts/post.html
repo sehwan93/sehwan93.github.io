@@ -77,11 +77,16 @@ layout: default
 
 	  <section class="recent_box tags">
     <div class="post_wrapper">
-      <h2 class="category_title">카테고리</h2>
+      <h2 class="category_title">이 글과 같은 카테고리의 글</h2>
       <div class="category_list">
       	{% assign dog = page.category %}
       		<h3>{{dog}}</h3>
-      		<h3>멍멍개개개</h3>
+      			{% for post in site.categories[dog] %}
+      			<ul>
+      				<li>{{post.title}}</li>
+      			</ul>
+      			{% endfor %}
+      		
     	</div>
     </div>
   </section> <!-- End Section Recent Box -->
