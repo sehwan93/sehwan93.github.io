@@ -417,7 +417,10 @@ vertical-align
 middle;
 border-style
 :
-none
+none;
+width
+:
+100%;
 }
 svg
 :not
