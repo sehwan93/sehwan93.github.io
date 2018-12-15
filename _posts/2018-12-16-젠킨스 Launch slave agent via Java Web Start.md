@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2018-12-16-젠킨스 Launch slave agent via Java Web Start"
+title: "젠킨스 Launch slave agent via Java Web Start"
 img: 20181216/jenkins.png
 date: 2018-12-16 00:43:00 +0300
 description: "젠킨스 노드 관리에서 Launch slave agent via Java Web Start 옵션이 안보일 때."
