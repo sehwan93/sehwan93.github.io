@@ -41,7 +41,6 @@ plugins:
   - jekyll-paginate-v2
 
 gems:
-  - jekyll-feed
   - jekyll-sitemap
 
 include: [_pages]
