@@ -3,7 +3,7 @@ layout: post
 title: "[네이버/웨일]현직 개발자의 네이버 웨일 사용 후기!"
 img: 20181223/웨일.png
 date: 2018-12-23 16:25:00 +0300
-description: "현직 개발자의 네이버 웨일 사용 후기!"
+description: "현직 개발자의 약 1년간의 네이버 웨일 사용 후기!"
 tag: [IT,네이버,웨일,브라우저]
 category: IT
 ---
