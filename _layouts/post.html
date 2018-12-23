@@ -19,7 +19,7 @@ layout: default
       </div>
     </header> <!-- End Header -->
 
-    <div class="entry_content">
+    <div class="entry_content text-center">
       {{page.content | markdownify}}
     </div>
     
@@ -77,7 +77,7 @@ layout: default
 
   <section class="recent_box">
     <div class="post_wrapper">
-      <h2 class="recent_title">연관된 포스트</h2>
+      <h2 class="recent_title">�뿰愿��맂 �룷�뒪�듃</h2>
       <div class="recent_list">
       	{% assign catego = page.category %}
         {% for post in site.categories[catego] %}
@@ -96,7 +96,7 @@ layout: default
   
   <section class="recent_box">
     <div class="post_wrapper">
-      <h2 class="recent_title">최근 올라온 글</h2>
+      <h2 class="recent_title">理쒓렐 �삱�씪�삩 湲�</h2>
       <div class="recent_list">
         {% for post in site.posts offset:0 limit:6 %}
           {% if post.title %}
