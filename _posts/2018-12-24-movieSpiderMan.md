@@ -10,7 +10,7 @@ category: 영화
 
 # 소니와 마블의 영화 스파이더맨 뉴 유니버스.
 
- [예고편](https://www.youtube.com/watch?v=vhkCBOsOoYY)
+ [예고편 영상 보러가기](https://www.youtube.com/watch?v=vhkCBOsOoYY)
  
  크리스마스, 연말인데 볼 영화가 없다.(전날에 아쿠아맨도 봤다..) 송강호를 기대했던 마약왕은 염력,리얼에 이어 3대 함정카드라고한다.
  
