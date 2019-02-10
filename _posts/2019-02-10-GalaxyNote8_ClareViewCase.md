@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[IT기기/케이스]갤럭시노트8 클리어뷰 케이스 실제 구매 후기(오키드그레이)"
-img: 20181224/videoView2.jpg
+img: 20190210/videoView2.jpg
 date: 2019-02-10 13:25:00 +0300
 description: "갤럭시노트8 클리어뷰 케이스 오키드그레이 실제 구매 후기!"
 tag: [IT기기,갤럭시,노트7,캐이스,클리어뷰]
