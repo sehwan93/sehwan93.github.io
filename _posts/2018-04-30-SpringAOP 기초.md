@@ -7,6 +7,10 @@ description: 스프링 AOP를 오라클 DB와 연동하여 사용하는 예제�
 tag: [Spring AOP]
 category: Spring
 ---
+ <script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>
 # Spring AOP란?
 
 Spring AOP는 로깅, 권한체크, 보안과 같은 모든(또는 대부분) 코드에 들어가야 할 공통의 코드를
@@ -300,3 +304,8 @@ INFO : org.sehwan.aop.SampleAdvice - ----------------
 
 INFO : org.sehwan.aop.SampleAdvice - ----------------
 위와 같은 로그가 기록됨!
+
+<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:703 });
+</script>

@@ -8,6 +8,11 @@ tag: [영화,마블,스파이더맨,상암,메가박스]
 category: 영화
 ---
 
+<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:703 });
+</script>
+
 # 소니와 마블의 영화 스파이더맨 뉴 유니버스.
 
 ---
@@ -77,7 +82,7 @@ category: 영화
  마지막으로 한줄평을 하자면, 
  >**"영화 티켓 값이 아깝지 않은 영화였다."**
  
- <iframe src="https://coupa.ng/bgd8RK" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd803" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81d" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81x" width="120" height="240" frameborder="0" scrolling="no"></iframe>
+ <script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>

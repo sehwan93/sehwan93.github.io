@@ -8,6 +8,11 @@ tag: [IT,네이버,웨일,브라우저]
 category: IT
 ---
 
+<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:703 });
+</script>
+
 # 네이버 웨일을 시작하게 된 계기
 
  마케팅 공부를 하다가 코딩을 해야겠다..하고 코딩의 코자를 배우기 시작하던 시절.(약 2년 전)
@@ -113,7 +118,7 @@ category: IT
  
  브라우저 같은 경우 한번 사용하던 브라우저를 잘 바꾸지 않는 편인거 같은데, 아직도 크롬이 최고라고 생각하는 많은 분들에게 물어보고싶다. ** 한국에선 IE지, 개발자는 크롬이지 하는 말들이 혹시 편견은 아닐까? **. 세상에 이런 브라우저도 있구나, 신세계를 느끼고싶다면 웨일을 설치해보라고 추천하고싶다!
  
- <iframe src="https://coupa.ng/bgd8RK" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd803" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81d" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81x" width="120" height="240" frameborder="0" scrolling="no"></iframe>
+<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>

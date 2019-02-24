@@ -8,6 +8,11 @@ tag: [젠킨스]
 category: IT
 ---
 
+<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>
+
 # 젠킨스 노드 관리에서 Launch slave agent via Java Web Start 옵션이 안보일 때. 
 
 ![정상화면]({{site.url}}/assets/img/20181216/정상화면.png)
@@ -24,7 +29,7 @@ category: IT
  
 ![agents]({{site.url}}/assets/img/20181216/agents.png)
  
- <iframe src="https://coupa.ng/bgd8RK" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd803" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81d" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81x" width="120" height="240" frameborder="0" scrolling="no"></iframe>
+ <iframe src="https://coupa.ng/bgd8<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>

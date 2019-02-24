@@ -8,6 +8,11 @@ tag: [IT기기,갤럭시,노트7,캐이스,클리어뷰]
 category: IT기기
 ---
 
+<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:703 });
+</script>
+
 # 클리어뷰 케이스
 
 ---
@@ -124,4 +129,7 @@ category: IT기기
  다시 한번 더 구매 링크 올려드리면서 리뷰는 끝!(오키드 그레이 색상은 상품정보 에러가 나서 나중에 올리도록 하겠습니다 ㅠㅠ)
  
  <iframe src="https://coupa.ng/bgAgV4" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- 
+ <script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>

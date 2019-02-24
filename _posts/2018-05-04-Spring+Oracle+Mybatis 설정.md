@@ -7,6 +7,10 @@ description: Spring Oracle Mybatis 연동 설정
 tag: [Spring Oracle Mybatis]
 category: Spring
 ---
+ <script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>
 
 #Spring + Oracle + mybatis 연동
 

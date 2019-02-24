@@ -8,6 +8,10 @@ tag: [Handelbars]
 comments: true
 category: Handlebars
 ---
+<script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:704 });
+</script>
 # Handlebars
 
 첫 번째 포스트!
@@ -132,7 +136,7 @@ li문을 추가해가며.. html 코드와 this.rno와 같이 자신이 가지고
 	}
 ```
 --
- <iframe src="https://coupa.ng/bgd8RK" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd803" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81d" width="120" height="240" frameborder="0" scrolling="no"></iframe>
- <iframe src="https://coupa.ng/bgd81x" width="120" height="240" frameborder="0" scrolling="no"></iframe>
+ <script src="//ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:703 });
+</script>
