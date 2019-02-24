@@ -86,3 +86,5 @@ category: 영화
 <script>
 	new PartnersCoupang.G({ id:704 });
 </script>
+
+<iframe src="https://coupa.ng/bgFASs" width="120" height="240" frameborder="0" scrolling="no"></iframe>
