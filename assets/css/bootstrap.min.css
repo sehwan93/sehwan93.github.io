@@ -112,8 +112,8 @@ html {
 	width: device-width
 }
 @font-face {
-	font-family:nanumpenscript;
-	src: url('https://fonts.googleapis.com/earlyaccess/nanumpenscript.css');
+	font-family:Noto Sans KR;
+	src: url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 }
 body {
 	margin: 0;
