@@ -24,7 +24,7 @@ category: 맛집
 
 처음 들어가니까 맞이해준건 귀여운 고래 후추통!
 
-![hoochoo](/assets/20190602/hoochoo.jpg)
+![hoochoo](/assets/img/20190602/20190602/hoochoo.jpg)
 
 
 메뉴판을 깜빡해서 찍지 못하고..
@@ -39,7 +39,7 @@ category: 맛집
 
 #### 가장 먼저 나온 케이준 치킨 샐러드
 
-![salade](/assets/20190602/salade.jpg)
+![salade](/assets/img/20190602/20190602/salade.jpg)
 
 치킨은 따뜻했고 소스도 적당히 새콤달콤해서 맛있었습니당.
 
@@ -47,7 +47,7 @@ category: 맛집
 
 #### 브로스/매콤 반반 돈까스!
 
-![brosAndHot](/assets/20190602/brosAndHot.jpg)
+![brosAndHot](/assets/img/20190602/20190602/brosAndHot.jpg)
 
 **매콤이 제일 맛있었다!**
 
@@ -55,11 +55,11 @@ category: 맛집
 
 ####스노우 치즈 돈까스와 소스
 
-![snow](/assets/20190602/snow.jpg)
+![snow](/assets/img/20190602/20190602/snow.jpg)
 
-![snowSource](/assets/20190602/snowSource.jpg)
+![snowSource](/assets/img/20190602/20190602/snowSource.jpg)
 
-![full](/assets/20190602/full.jpg)
+![full](/assets/img/20190602/20190602/full.jpg)
 
 스노우 치즈 돈까스와 브로스 돈까스의 소스는 같아보였는데
 
@@ -88,16 +88,16 @@ category: 맛집
 
 
 #### 입구와 카운터!
- ![intro](/assets/20190602/intro.jpg)
- ![counter](/assets/20190602/counter_n3j30vbd4.jpg)
+ ![intro](/assets/img/20190602/20190602/intro.jpg)
+ ![counter](/assets/img/20190602/20190602/counter_n3j30vbd4.jpg)
  가장 기본으로 보이는 모리셔스 브라운 밀크티를 주문!
  (가격은 4,300원)
 
- ![main](/assets/20190602/main.jpg)
+ ![main](/assets/img/20190602/20190602/main.jpg)
  처음에는 버블 부분이 따뜻해서 신기.
 
  흑설탕 맛이 진하게 났고.. 버블이 매우 쫀득해서 맛있었음!
- 
+
  **끝**
 
 
