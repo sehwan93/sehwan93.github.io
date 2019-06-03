@@ -3545,7 +3545,7 @@ p {
   font-size: 16px;
   line-height: 1.75rem;
   margin: 0 0 1.75rem;
-  color: #525c65;
+  color: black;
   font-weight: 400;
 }
 
@@ -3944,7 +3944,7 @@ cite {
 
 .post_wrapper, .entry_content {
   max-width: 900px;
-  padding: 0 1.85rem;
+  padding: 0 1.25rem;
   margin: 0 auto;
 }
 
@@ -3953,6 +3953,13 @@ cite {
   max-width: 90%;
   margin: 7rem auto 7rem;
 }
+
+@media screen and (max-width: 768px) {
+	.post_content {
+	 max-width: 100%; 
+	 } 
+}
+
 
 .post {
   background-color: #ffffff;
@@ -4528,7 +4535,7 @@ cite {
   .chapters .chapter {
     width: 99%;
     margin: 0 0.5% 2% 0.5%;
-  }
+  }#525c65
   .copyright p {
     font-size: 0.6rem;
   }
