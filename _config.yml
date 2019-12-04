@@ -5,9 +5,9 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://sehwan93.github.io
 
 # Author settings
-author-pic: face.jpg # your photo
+author-pic: logo.png # your photo
 author-name: kmk4204
-about-author: Developer.
+about-author: 안녕하세요..
 email: 2517762@naver.com # your email
 phone: 010-****-**** # your pnone number
 website:
