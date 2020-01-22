@@ -48,7 +48,7 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             IT
-    url:               /posts/
+    url:               /ITPost/
   - title:             Documentation
     url:               https://hydejack.com/docs/
   - title:             About
