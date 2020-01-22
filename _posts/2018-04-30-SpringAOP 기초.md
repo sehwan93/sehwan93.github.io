@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Spring AOP 기본."
 img: 
 date: 2018-04-30 14:00:00 +0300
