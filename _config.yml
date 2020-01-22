@@ -47,8 +47,8 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Spring
-    url:               /Spring/
+  - title:             IT
+    url:               /IT/
   - title:             Documentation
     url:               https://hydejack.com/docs/
   - title:             About
