@@ -49,8 +49,6 @@ author:
 menu:
   - title:             IT
     url:               /it/
-  - title:             Documentation
-    url:               https://hydejack.com/docs/
   - title:             About
     url:               /about/
 
@@ -63,7 +61,7 @@ menu:
 #     url:               /cookies-policy/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2019. DESH All rights reserved..
+copyright:             © 2020. DESH All rights reserved..
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
