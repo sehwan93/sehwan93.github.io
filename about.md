@@ -18,4 +18,4 @@ hide_description: false
 image: /assets/img/blog/hydejack-8.png
 ---
 
-현재 유통업체에서 일하고 있는 경영대학 출신 개발자입니다.
+유통업체에서 일하고 있는 경영대학 출신 개발자입니다.
