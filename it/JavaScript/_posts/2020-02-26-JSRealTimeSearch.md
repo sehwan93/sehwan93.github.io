@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "[JavaScript/Jquery]Input과 keyup을 이용한 테이블 실시간 검색"
-img: 
 date: 2020-02-26 22:50:00 +0300
 description: [JavaScript/Jquery]Input과 keyup을 이용한 테이블 실시간 검색
-tag: [JavaScript,Jquery]
+tags: [JavaScript,Jquery]
+categories: [JavaScript]
 comments: true
-category: JavaScript
 ---
 # JS를 통한 Table 실시간 검색
 
