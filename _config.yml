@@ -47,8 +47,14 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             IT
-    url:               /it/
+  - title:             Oracle
+    url:               /oracle/
+  - title:             Java
+    url:               /java/
+  - title:             배포
+    url:               /build/
+  - title:             JavaScript
+    url:               /javascript/
   - title:             About
     url:               /about/
 
