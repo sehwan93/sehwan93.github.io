@@ -4,7 +4,7 @@ title: "[JavaScript/Jquery]Input과 keyup을 이용한 테이블 실시간 검�
 date: 2020-02-26 22:50:00 +0300
 description: [JavaScript/Jquery]Input과 keyup을 이용한 테이블 실시간 검색
 tags: [JavaScript,Jquery]
-categories: [JavaScript]
+categories: [javascript]
 comments: true
 ---
 # JS를 통한 Table 실시간 검색
