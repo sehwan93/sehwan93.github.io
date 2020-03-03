@@ -8,7 +8,7 @@ categories: [java]
 comments: true
 ---
 
-# [Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context
+# [Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context 에러
 
 개발환경을 새로 세팅해야 하는 상황이 발생해서 개발환경 파일을 그대로 복사해서
 
