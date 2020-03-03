@@ -22,7 +22,9 @@ MAVEN Setting 파일이 default 파일로 되있어서 MAVEN 에러가 발생해
 
 이제 되겠거니 하고 서버를 올렸더니
 
-LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context ~~~
+```
+	LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context 
+```
 
 에러가 발생했다.
 
