@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context"
-date: 2020-03-03 22:50:00 +0300
-description: [Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context
+title: [Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context
+description: >
+   [Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context
 tags: [JAVA,Spring]
 categories: [java]
 comments: true
