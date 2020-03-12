@@ -7,7 +7,7 @@ tags: [JavaScript,Jquery]
 categories: [javascript]
 comments: true
 ---
-# JS를 통한 Table 실시간 검색
+## JS를 통한 Table 실시간 검색
 
 기능 설명 : Input에 값을 입력하면 해당 값이 있는 행만 표시해주는 코드입니다.
 
