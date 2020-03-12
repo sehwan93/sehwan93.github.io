@@ -8,6 +8,8 @@ categories: [java]
 comments: true
 ---
 
+spring 프레임워크에서 서버 기동 시 자주 나오는 에러 입니다.
+
 ## [Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context 에러
 
 개발환경을 새로 세팅해야 하는 상황이 발생해서 개발환경 파일을 그대로 복사해서
