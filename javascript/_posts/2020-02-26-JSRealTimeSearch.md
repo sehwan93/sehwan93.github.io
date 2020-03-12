@@ -7,8 +7,6 @@ categories: [javascript]
 comments: true
 ---
 
-input과 keyup 펑션을 이용한 실시간 테이블 검색 기능 입니다.
-
 ## JS를 통한 Table 실시간 검색
 
 기능 설명 : Input에 값을 입력하면 해당 값이 있는 행만 표시해주는 코드입니다.
