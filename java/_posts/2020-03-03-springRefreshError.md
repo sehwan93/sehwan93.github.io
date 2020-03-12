@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context
+title: "[Spring/java] LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context"
 description: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context
 tags: [JAVA,Spring]
 categories: [java]
