@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JavaScript/Jquery]Input과 keyup을 이용한 테이블 실시간 검색"
-description: [JavaScript/Jquery]Input과 keyup을 이용한 테이블 실시간 검색
+description: "[JavaScript/Jquery]Input과 keyup을 이용한 테이블 실시간 검색"
 tags: [JavaScript,Jquery]
 categories: [javascript]
 comments: true
