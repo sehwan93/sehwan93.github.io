@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring/java] Spring Schduler 사용법"
+title: "[Spring/java] Spring Scheduler 사용법"
 tags: [JAVA,Spring]
 categories: [java]
 comments: true
@@ -14,13 +14,13 @@ Mall 이 서버가 다운되면 약관을 가져오지 못해서 내 업무에�
 
 약관을 못 가져오면 안 띄워버릴 순 없으므로.. 스케쥴로 서버 메모리에 올려놓기로 결정.
 
-그래서 사용하기로 한게 간단한 Spring Schduler
+그래서 사용하기로 한게 간단한 Spring Scheduler
 
 Java 버전 : 1.6
 
 Spring 버전 : 3.0.5
 
-## Spring Schduler 사용
+## Spring Scheduler 사용
 
 1.xml파일 추가하기
 
