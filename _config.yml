@@ -55,6 +55,8 @@ menu:
     url:               /build/
   - title:             JavaScript
     url:               /javascript/
+  - title:             Android
+    url:               /android/
   - title:             About
     url:               /about/
 
