@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "[Android/웹뷰] PWA를 도입한 안드로이드 웹뷰에서 net:ERR_FAILED 발생하는 이슈"
-tags: [JavaScript,Android]
 categories: [android]
 comments: true
 ---

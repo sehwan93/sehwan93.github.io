@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "[Oracle/iBatis/Java] SelectKey Insert 후에 Key 값 바로 가져오기"
-tags: [Oracle/Java]
 categories: [oracle]
 comments: true
 ---
