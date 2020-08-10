@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[알고리즘]해커랭크 다시 시작."
-tags: [algorithm]
+title: "[알고리즘]해커랭크 다시 시작"
 categories: [algorithm]
 comments: true
 ---
