@@ -57,6 +57,8 @@ menu:
     url:               /javascript/
   - title:             Android
     url:               /android/
+  - title:             Algorithm
+    url:               /algorithm/
   - title:             About
     url:               /about/
 
