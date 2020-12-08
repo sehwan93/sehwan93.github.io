@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[java] Jar 파일 쉽게 GUI로 추가/수정/삭제 하는 법&7zip)"
+title: "[java] Jar 파일 쉽게 GUI로 추가/수정/삭제 하는 법(7zip)"
 tags: [JAVA]
 categories: [java]
 comments: true
