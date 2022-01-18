@@ -59,6 +59,8 @@ menu:
     url:               /android/
   - title:             Algorithm
     url:               /algorithm/
+  - title: Etc
+    url: /etc/
   - title:             About
     url:               /about/
 
