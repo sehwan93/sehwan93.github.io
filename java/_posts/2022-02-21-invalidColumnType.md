@@ -26,7 +26,7 @@ IDE에서 바꿔야 할 부분을 찾아보니 서칭 되는 부분이 1..2..3..
 
 -----
 
-#Caused by: java.sql.SQLException: Invalid column type: 1111
+# Caused by: java.sql.SQLException: Invalid column type: 1111
 
 SELECT 문에서 발생하는 문제였다.
 
