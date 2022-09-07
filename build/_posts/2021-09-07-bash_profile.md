@@ -6,7 +6,7 @@ categories: [build]
 comments: true
 ---
 
-##.bash_profile 용도는?
+## .bash_profile 용도는?
  윈도우든 리눅스든 CLI를 하다보면 어디서든 실행이 되는 명령어들이 있고, 해당 파일이 있는 곳에서만 실행 되는 명령어들이 있다.
  
  개발자라면 늘 접하게 되는 예로는 java를 설치 후 CMD 창에서 java -version을 쳐도 버전이 나오지 않지만. 환경변수에 추가하고 나면 java -version을 어디에서나 쳐도 버전이 출력된다.
@@ -38,5 +38,3 @@ vi .bash_profile
 //bash_profile 파일 적용
 source ~/.bash_profile
 ```
-
-
