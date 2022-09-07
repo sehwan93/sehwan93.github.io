@@ -38,3 +38,8 @@ vi .bash_profile
 //bash_profile 파일 적용
 source ~/.bash_profile
 ```
+
+### 이 주제와 비슷한 알쓸신잡!
+[자주 쓰는 VI 명령어 모음](https://sehwan93.github.io/build/2022-09-07-vi/)
+
+[자주 쓰는 리눅스 명령어 모음](https://sehwan93.github.io/build/2020-09-14-LinuxCommand1/)
