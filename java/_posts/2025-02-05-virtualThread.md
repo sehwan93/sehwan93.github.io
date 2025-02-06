@@ -51,6 +51,53 @@ supplyAsync를 사용하면 기본적으로 forkJoinPool을 사용.
 java 21의 경우는 forkJoinPool을 또한 내부적으로 가상스레드를 활용할 가능성이 있지만 ForkJoinPool 자체는 여전히 CPU 코어 개수 기반의 제한된 워커 스레드를 사용.
 
 
+위의 소스에서 Thread.currentThread().getName() 을 호출 할 경우 
+
+Thread[#107,ForkJoinPool.commonPool-worker-1,5,VirtualThreads]
+
+위와 같은 이름이 나온다.
+
+해당 이름만 보고 버츄얼스레드로 돌고 있다고 착각. 
+
+챗GPT에 따르면 VirtualThreads가 들어간 이유는 해당 스레드는 ForkJoinPool의 스레드지만 해당 환경이 Java21 환경이므로
+
+ForkJoinPool의 스레드가 가상스레드를 실행하는 플랫폼 스레드의 역할도 할 수 있고 그렇기 때문에 저렇게 이름이 나온 것.
+(Thread.isVirtual()을 호출 할 경우 false가 나오긴 하더라.. 제대로 확인 안한 내 잘못이다)
+
+아래는 챗GPT의 답변
+
+
+🔥 예제 코드로 확인해보자
+```
+public class VirtualThreadExample {
+    public static void main(String[] args) {
+        Runnable task = () -> {
+            Thread current = Thread.currentThread();
+            System.out.println("Thread Name: " + current.getName());
+            System.out.println("Is Virtual Thread? " + current.isVirtual());
+        };
+
+        // 가상 스레드 실행
+        Thread vThread = Thread.ofVirtual().start(task);
+    }
+}
+```
+
+📌 실행 결과 예시:
+Thread Name: VirtualThread[#25]/runnable@ForkJoinPool-1-worker-3
+Is Virtual Thread? true
+
+📌 이 결과가 의미하는 것:
+ForkJoinPool-1-worker-3: 이건 원래 ForkJoinPool에서 실행되는 플랫폼 스레드임.
+하지만 이 위에서 가상 스레드(VirtualThread[#25])가 실행됨.
+즉, ForkJoinPool의 스레드가 일반적인 플랫폼 스레드 역할도 하고, 가상 스레드를 실행하는 역할도 함.
+
+🚀 결론
+✅ ForkJoinPool의 스레드는 원래 ForkJoinPool의 작업을 실행하는 플랫폼 스레드 역할을 하면서, 가상 스레드를 실행하는 플랫폼 스레드 역할도 할 수 있다.
+❌ ForkJoinPool이 직접 가상 스레드를 만드는 건 아님!
+✅ 하지만 가상 스레드가 실행될 때 ForkJoinPool의 스레드 위에서 실행될 수 있음!
+
+
 -----
 
 # 변경 소스
@@ -82,3 +129,7 @@ java 21의 경우는 forkJoinPool을 또한 내부적으로 가상스레드를 �
 위와 같이 명시적으로 가상스레드를 전달하도록 수정하니 성능 개선 완료. 하지만 여전히 webflux 보다는 성능이 좋지는 않다.
 
 thread pin 현상 때문일 것으로 추측 중. 
+
+참고 : https://waterfogsw.tistory.com/72
+참고 : https://wedul.tistory.com/726
+
